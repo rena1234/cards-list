@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>TOTVS</h1>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Produtos</mat-label>
+    <input type="text" matInput [(formControl)]="searchControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let option of searchContextService.filteredOptions | async" [value]="option">
+        {{option.productName}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
+</div>
