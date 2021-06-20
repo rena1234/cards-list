@@ -11,9 +11,8 @@ import { AlertComponent } from 'src/app/components/alert/alert.component';
 
 export class ExpandableCardsComponent implements OnInit {
   @Input() product: Product;
-  constructor(private dialog: MatDialog) {
-    
-  }
+
+  constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {
   }

@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { ExpandableCardsComponent } from './expandable-cards.component';
 
@@ -8,7 +9,10 @@ describe('ExpandableCardsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExpandableCardsComponent ]
+      declarations: [ ExpandableCardsComponent ],
+      imports: [
+        MatDialogModule,
+      ],
     })
     .compileComponents();
   });
