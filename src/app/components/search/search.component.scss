@@ -1,6 +1,30 @@
-.container {
+.container-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(to right,#517DE0, #2744DD);
+  padding-top: calc(8px * 5);
+
+  .container-top__logo {
+    width: 10vw;
+    display: flex;
+    height: 3vw;
+    background-image: url('../../../assets/logo.png');
+    background-position: center top;
+    background-size: 100% auto;
+    margin-bottom: calc(8px * 5);
+  }
+
+  .container-top__input {
+    width: 30vw;
+    margin-bottom: calc(8px * 5);
+  }
+}
+
+.container-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: linear-gradient(to right,#517DE0, #2744DD);
 }
