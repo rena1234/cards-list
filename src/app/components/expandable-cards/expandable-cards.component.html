@@ -1,0 +1,16 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{ product?.businessName }}
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ product?.productName }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div>
+      <span>{{product?.productDescription}}</span>
+      <button mat-button (click)="openDialog()">VER MAIS</button>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
