@@ -1,13 +1,12 @@
 <mat-accordion >
   <mat-expansion-panel (opened)="handleOpen()" (closed)="handleClose()" class="container">
     <mat-expansion-panel-header>
-      <mat-panel-title>
-        {{ product?.businessName }}
-      </mat-panel-title>
-      <mat-panel-description>
-        {{ product?.productName }}
-      </mat-panel-description>
-      <span class="container__open-text">{{open? 'Ocultar detalhe da ação': 'Ver detalhe da ação'}}</span>
+      <div class="container__title-container">
+      <span class="container__title-business-name">{{product?.businessName.toUpperCase()}}</span>
+      <div class="container__title-container__brand-icon"></div>
+      <span class="container__title-container__product-name">{{product?.productName}}</span>
+      <span class="container__title-container__open-text">{{open? 'Ocultar detalhe da ação': 'Ver detalhe da ação'}}</span>
+      </div>
     </mat-expansion-panel-header>
     <div class="container__description-container">
       <div class="container__description-container__text-container">

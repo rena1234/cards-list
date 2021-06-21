@@ -2,24 +2,50 @@
 @import '../../../assets/colors.scss';
 @import '../../../assets/responsive.mixin.scss';
 
+
 .container {
   width: 50vw;
   @include phone{
     width: 80vw;
   }
-  .container__open-text {
-    @include phone{
-      display: none;
+  .container__title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .container__title-container__business-name {
+      font-weight: semi-bold;
     }
-    margin-right: $double-pixel;
-    color: $highlighted;
+
+    .container__title-container__brand-icon {
+      background-image: url('../../../assets/icone-hotel.jpg');
+      width: $triple-pixel;
+      height: $triple-pixel;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: $pixel;
+    }
+
+    .container__title-container__product-name {
+      margin-left: $double-pixel;
+    }
+
+    .container__title-container__open-text {
+      @include phone{
+        display: none;
+      }
+      margin-right: $double-pixel;
+      color: $highlighted;
+      margin-left: auto;
+    }
   }
+
   .container__description-container {
     display: flex;
     @include phone{
       flex-direction: column;
     }
-    //padding: $double-pixel $triple-pixel;
 
     .container__description-container__text-container {
       width: 70%;
