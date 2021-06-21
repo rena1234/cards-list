@@ -29,4 +29,10 @@
   flex-direction: column;
   justify-content: end;
   background-image: linear-gradient(to right,#517DE0, #2744DD);
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  top: 10px;
 }

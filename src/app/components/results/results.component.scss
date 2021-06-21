@@ -22,8 +22,11 @@
 }
 
 .cards-container {
-  padding: $double-pixel $pixel;
   display: flex;
   flex-direction: column;
   gap: $double-pixel;
+}
+
+.cards-container, .no-results-container{
+  padding: $double-pixel $pixel;
 }
