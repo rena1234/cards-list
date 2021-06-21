@@ -1,5 +1,5 @@
 <mat-accordion >
-  <mat-expansion-panel class="container">
+  <mat-expansion-panel (opened)="handleOpen()" (closed)="handleClose()" class="container">
     <mat-expansion-panel-header>
       <mat-panel-title>
         {{ product?.businessName }}
@@ -7,6 +7,7 @@
       <mat-panel-description>
         {{ product?.productName }}
       </mat-panel-description>
+      <span>{{open? 'Ocultar detalhe da ação': 'Ver detalhe da ação'}}</span>
     </mat-expansion-panel-header>
     <div class="container__description-container">
       <div class="container__description-container__text-container">
