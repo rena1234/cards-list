@@ -1,27 +1,25 @@
 # CardsList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+## Install
+
+`npm install`.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`ng serve`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`ng build`. conteúdo irá para a pasta `dist/`. Use a flag `--prod` para build de proudução.
 
-## Running unit tests
+## Unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test`
 
-## Running end-to-end tests
+## Screenshot Desktop
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![alt text](https://i.imgur.com/3bceyib.png)
 
-## Further help
+## Screenshot Dispositivo Móvel
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![alt text](https://i.imgur.com/1N8bE1c.png)
