@@ -1,0 +1,36 @@
+@import '../../../assets/metrics.scss';
+@import '../../../assets/colors.scss';
+
+.no-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .no-results-container__image-container {
+    background-image: url('../../../assets/unknown.jpg');
+    width: 10vw;
+    height: 10vw;
+    background-position: center top;
+    background-size: contain;
+    margin-bottom: $double-pixel;
+    background-repeat: no-repeat;
+  }
+
+  .no-results-container__text-wrapper {
+    text-align: center;
+
+    .no-results-container__text-wrapper__text {
+      color: $light-font;
+      font-weight: bold;
+    }
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: $double-pixel;
+}
+
+.cards-container, .no-results-container{
+  padding: $double-pixel $pixel;
+}
