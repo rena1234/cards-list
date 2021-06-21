@@ -11,18 +11,8 @@
 
   .container-top__logo {
     display: flex;
-    /*
-    width: 10vw;
-    height: 3vw;
-    */
     width: 150px;
     height: 45px;
-    /*
-    @include phone{
-      width: 20vw;
-      height: 15vw;
-    }
-    */
     background-image: url('../../../assets/logo.png');
     background-position: center top;
     background-size: contain;
