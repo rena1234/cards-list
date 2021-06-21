@@ -18,17 +18,21 @@
     }
 
     .container__title-container__brand-icon {
-      background-image: url('../../../assets/icone-hotel.jpg');
+      background-image: url('../../../assets/icone-hotel.png');
       width: $triple-pixel;
       height: $triple-pixel;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
       margin-left: $pixel;
+      @include phone{
+        display: none;
+      }
     }
 
     .container__title-container__product-name {
       margin-left: $double-pixel;
+      color: $regular-font;
     }
 
     .container__title-container__open-text {
@@ -48,6 +52,7 @@
     }
 
     .container__description-container__text-container {
+      color: $regular-font;
       width: 70%;
       @include phone{
         width: 95%;
