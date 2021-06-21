@@ -1,20 +1,49 @@
 @import '../../../assets/metrics.scss';
 @import '../../../assets/colors.scss';
+@import '../../../assets/responsive.mixin.scss';
 
 .container {
   width: 50vw;
+  @include phone{
+    width: 80vw;
+  }
+  .container__open-text {
+    @include phone{
+      display: none;
+    }
+    margin-right: $double-pixel;
+    color: $highlighted;
+  }
   .container__description-container {
     display: flex;
-    padding: $double-pixel $triple-pixel;
+    @include phone{
+      flex-direction: column;
+    }
+    //padding: $double-pixel $triple-pixel;
 
     .container__description-container__text-container {
       width: 70%;
+      @include phone{
+        width: 95%;
+      }
     }
-    .container__description-container__button {
-      background-color: #FED468;
-      color: $lighter;
-      border: none;
-      padding: $pixel $double-pixel;
+
+    .container__description-container__button-container {
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      @include phone{
+        padding-top: $double-pixel;
+        align-items: center;
+        justify-content: center;
+      }
+      .container__description-container__button-container__button {
+        background-color: #FED468;
+        color: $lighter;
+        border: none;
+        padding: $pixel $double-pixel;
+      }
     }
   }
 }

@@ -7,10 +7,8 @@
   .no-results-container__image-container {
     background-image: url('../../../assets/unknown.jpg');
     width: 10vw;
-    display: flex;
     height: 10vw;
     background-position: center top;
-    //background-size: 100% auto;
     background-size: contain;
     margin-bottom: $double-pixel;
     background-repeat: no-repeat;

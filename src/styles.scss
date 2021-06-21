@@ -38,12 +38,13 @@ body {
   margin: 0;
   padding: 0;
 }
-html, body { height: 100%; }
+html, body { height: 100%; width: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 $pixel: 8px;
 
 body{
+  //background: #FAFAFA !important;
   background: #FAFAFA !important;
   .mat-form-field-flex {
     background: white !important;
