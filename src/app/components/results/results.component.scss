@@ -1,4 +1,5 @@
 @import '../../../assets/metrics.scss';
+@import '../../../assets/colors.scss';
 
 .no-results-container {
   display: flex;
@@ -16,6 +17,11 @@
 
   .no-results-container__text-wrapper {
     text-align: center;
+
+    .no-results-container__text-wrapper__text {
+      color: $light-font;
+      font-weight: bold;
+    }
   }
 }
 

@@ -1,10 +1,10 @@
 <div class="no-results-container" *ngIf="products.length === 0">
   <div class="no-results-container__image-container"></div>
-  <div style="no-results-container__text-wrapper">
-    <span>Você ainda não realizou</span>
+  <div class="no-results-container__text-wrapper">
+    <span class="no-results-container__text-wrapper__text">{{contextUpdateCounter > 1 ? 'Nenhum resultado encontrado': 'Você ainda não realizou'}}</span>
   </div>
-  <div style="text-wrapper">
-    <span>nenhuma busca!</span>
+  <div class="no-results-container__text-wrapper">
+    <span class="no-results-container__text-wrapper__text">{{contextUpdateCounter > 1 ? 'dica: tente a letra R ou G': 'nenhuma busca!'}}</span>
   </div>
 </div>
 
