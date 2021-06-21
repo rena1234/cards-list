@@ -1,10 +1,12 @@
+@import '../../../assets/metrics.scss';
+
 .container-top {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   background-image: linear-gradient(to right,#517DE0, #2744DD);
-  padding-top: calc(8px * 5);
+  padding-top: $five-fold-pixel;
 
   .container-top__logo {
     width: 10vw;
@@ -13,12 +15,12 @@
     background-image: url('../../../assets/logo.png');
     background-position: center top;
     background-size: 100% auto;
-    margin-bottom: calc(8px * 5);
+    margin-bottom: $five-fold-pixel;
   }
 
   .container-top__input {
     width: 30vw;
-    margin-bottom: calc(8px * 5);
+    margin-bottom: $five-fold-pixel;
   }
 }
 

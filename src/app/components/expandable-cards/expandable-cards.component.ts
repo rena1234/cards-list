@@ -19,7 +19,7 @@ export class ExpandableCardsComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(AlertComponent, {
-      width: '250px',
+      width: '30vw',
     });
   }
 
