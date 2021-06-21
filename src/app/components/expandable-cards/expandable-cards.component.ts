@@ -11,6 +11,7 @@ import { AlertComponent } from 'src/app/components/alert/alert.component';
 
 export class ExpandableCardsComponent implements OnInit {
   @Input() product: Product;
+  open = false;
 
   constructor(private dialog: MatDialog) {}
 
@@ -21,6 +22,14 @@ export class ExpandableCardsComponent implements OnInit {
     const dialogRef = this.dialog.open(AlertComponent, {
       width: '30vw',
     });
+  }
+
+  handleOpen(): void {
+    this.open = true;
+  }
+  
+  handleClose(): void {
+    this.open = false;
   }
 
 }
