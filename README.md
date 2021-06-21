@@ -16,6 +16,8 @@
 
 Run `ng test`
 
+## Controle de estado utilizando rxjs Observables e services
+
 ## Screenshot Desktop
 
 ![alt text](https://i.imgur.com/3bceyib.png)
