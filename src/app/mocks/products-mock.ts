@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     businessName: 'Golden Tulip',
     productName: 'Golden Tulip',
-    productDescription: 'Golden Tulip é uma cadeia holandesa de hotéis'
+    productDescription: 'Golden Tulip é uma cadeia holandesa de hotéisGolden Tulip é uma cadeia holandesa de hotéiGolden Tulip é uma cadeia holandesa de hotéiGolden Tulip é uma cadeia holandesa de hotéisss'
   },
   {
     businessName: 'Golden Tulip',

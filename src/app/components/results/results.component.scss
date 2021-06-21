@@ -1,0 +1,29 @@
+@import '../../../assets/metrics.scss';
+
+.no-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .no-results-container__image-container {
+    background-image: url('../../../assets/unknown.jpg');
+    width: 10vw;
+    display: flex;
+    height: 10vw;
+    background-position: center top;
+    //background-size: 100% auto;
+    background-size: contain;
+    margin-bottom: $double-pixel;
+    background-repeat: no-repeat;
+  }
+
+  .no-results-container__text-wrapper {
+    text-align: center;
+  }
+}
+
+.cards-container {
+  padding: $double-pixel $pixel;
+  display: flex;
+  flex-direction: column;
+  gap: $double-pixel;
+}
